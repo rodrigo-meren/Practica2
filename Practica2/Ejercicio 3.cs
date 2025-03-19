@@ -23,5 +23,41 @@ namespace Practica2
         {
             index.Show();
         }
+
+        private void Ejercicio_3_Load(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void btnSeleccion_Click(object sender, EventArgs e)
+        {
+            if (rbMasc.Checked)
+            {
+                lblSexo.Text = "Masculino";
+
+                if (rbCasado.Checked)
+                {
+                    lblEstCivil.Text = "Casado";
+                }
+                else if (rbSolt.Checked)
+                {
+                    lblEstCivil.Text = "Soltero";
+                }
+            }
+            else if (rbFem.Checked)
+            {
+                lblSexo.Text = "Femenino";
+                if (rbCasado.Checked)
+                {
+                    lblEstCivil.Text = "Casada";
+                }
+                else if (rbSolt.Checked)
+                {
+                    lblEstCivil.Text = "Soltera";
+                }
+            }
+
+           
+        }
     }
 }
