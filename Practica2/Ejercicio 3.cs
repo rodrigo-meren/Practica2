@@ -12,9 +12,16 @@ namespace Practica2
 {
     public partial class Ejercicio_3: Form
     {
-        public Ejercicio_3()
+        index index;
+        public Ejercicio_3(index index)
         {
             InitializeComponent();
+            this.index = index;
+        }
+
+        private void Ejercicio_3_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            index.Show();
         }
     }
 }

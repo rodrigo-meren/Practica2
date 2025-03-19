@@ -60,7 +60,7 @@
             this.btnNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNombre.Location = new System.Drawing.Point(644, 45);
             this.btnNombre.Name = "btnNombre";
-            this.btnNombre.Size = new System.Drawing.Size(101, 34);
+            this.btnNombre.Size = new System.Drawing.Size(132, 34);
             this.btnNombre.TabIndex = 2;
             this.btnNombre.Text = "Aceptar";
             this.btnNombre.UseVisualStyleBackColor = true;
@@ -118,7 +118,9 @@
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label1);
             this.Name = "Ejemplo_1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ejemplo_1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Ejemplo_1_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

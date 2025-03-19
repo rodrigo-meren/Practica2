@@ -12,9 +12,16 @@ namespace Practica2
 {
     public partial class Ejemplo_2: Form
     {
-        public Ejemplo_2()
+        index index;
+        public Ejemplo_2(index index)
         {
             InitializeComponent();
+            this.index = index;
+        }
+
+        private void Ejemplo_2_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            index.Show();
         }
     }
 }
