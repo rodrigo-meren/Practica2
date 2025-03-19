@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ejercicio 1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ejercicio 1.Designer.cs">
+      <DependentUpon>Ejercicio 1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ejercicio 2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ejercicio 2.Designer.cs">
+      <DependentUpon>Ejercicio 2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ejercicio 3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ejercicio 3.Designer.cs">
+      <DependentUpon>Ejercicio 3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
