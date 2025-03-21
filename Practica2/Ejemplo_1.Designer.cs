@@ -30,11 +30,11 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.btnNombre = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.bntUno = new System.Windows.Forms.Button();
             this.btnTodos = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.lb1 = new System.Windows.Forms.ListBox();
+            this.lb2 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // label1
@@ -54,16 +54,17 @@
             this.txtNombre.Size = new System.Drawing.Size(302, 22);
             this.txtNombre.TabIndex = 1;
             // 
-            // btnNombre
+            // btnAgregar
             // 
-            this.btnNombre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNombre.Location = new System.Drawing.Point(644, 45);
-            this.btnNombre.Name = "btnNombre";
-            this.btnNombre.Size = new System.Drawing.Size(132, 34);
-            this.btnNombre.TabIndex = 2;
-            this.btnNombre.Text = "Aceptar";
-            this.btnNombre.UseVisualStyleBackColor = true;
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.Location = new System.Drawing.Point(644, 45);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(132, 34);
+            this.btnAgregar.TabIndex = 2;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // bntUno
             // 
@@ -75,6 +76,7 @@
             this.bntUno.TabIndex = 3;
             this.bntUno.Text = ">";
             this.bntUno.UseVisualStyleBackColor = true;
+            this.bntUno.Click += new System.EventHandler(this.bntUno_Click);
             // 
             // btnTodos
             // 
@@ -86,35 +88,39 @@
             this.btnTodos.TabIndex = 4;
             this.btnTodos.Text = ">>";
             this.btnTodos.UseVisualStyleBackColor = true;
+            this.btnTodos.Click += new System.EventHandler(this.btnTodos_Click);
             // 
-            // listBox1
+            // lb1
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(72, 148);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(261, 340);
-            this.listBox1.TabIndex = 5;
+            this.lb1.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb1.FormattingEnabled = true;
+            this.lb1.ItemHeight = 26;
+            this.lb1.Location = new System.Drawing.Point(72, 148);
+            this.lb1.Name = "lb1";
+            this.lb1.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
+            this.lb1.Size = new System.Drawing.Size(261, 316);
+            this.lb1.TabIndex = 5;
             // 
-            // listBox2
+            // lb2
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 16;
-            this.listBox2.Location = new System.Drawing.Point(584, 148);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(261, 340);
-            this.listBox2.TabIndex = 6;
+            this.lb2.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb2.FormattingEnabled = true;
+            this.lb2.ItemHeight = 26;
+            this.lb2.Location = new System.Drawing.Point(584, 148);
+            this.lb2.Name = "lb2";
+            this.lb2.Size = new System.Drawing.Size(261, 316);
+            this.lb2.TabIndex = 6;
             // 
             // Ejemplo_1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(876, 526);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lb2);
+            this.Controls.Add(this.lb1);
             this.Controls.Add(this.btnTodos);
             this.Controls.Add(this.bntUno);
-            this.Controls.Add(this.btnNombre);
+            this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label1);
             this.Name = "Ejemplo_1";
@@ -130,10 +136,10 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.Button btnNombre;
+        private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button bntUno;
         private System.Windows.Forms.Button btnTodos;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.ListBox lb1;
+        private System.Windows.Forms.ListBox lb2;
     }
 }

@@ -49,6 +49,7 @@
             // 
             // chlEmpleos
             // 
+            this.chlEmpleos.CheckOnClick = true;
             this.chlEmpleos.ColumnWidth = 1;
             this.chlEmpleos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chlEmpleos.FormattingEnabled = true;
@@ -164,7 +165,7 @@
             // 
             this.lblSexo.AutoSize = true;
             this.lblSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSexo.Location = new System.Drawing.Point(153, 523);
+            this.lblSexo.Location = new System.Drawing.Point(136, 523);
             this.lblSexo.Name = "lblSexo";
             this.lblSexo.Size = new System.Drawing.Size(0, 25);
             this.lblSexo.TabIndex = 8;
@@ -225,6 +226,7 @@
             this.Controls.Add(this.btnSeleccion);
             this.Controls.Add(this.chlEmpleos);
             this.Name = "Ejercicio_3";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ejercicio_3";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Ejercicio_3_FormClosed);
             this.Load += new System.EventHandler(this.Ejercicio_3_Load);
