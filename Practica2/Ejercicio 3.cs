@@ -24,11 +24,7 @@ namespace Practica2
             index.Show();
         }
 
-        private void Ejercicio_3_Load(object sender, EventArgs e)
-        {
-           
-        }
-
+     
         private void btnSeleccion_Click(object sender, EventArgs e)
         {
             if (rbMasc.Checked)
@@ -56,7 +52,10 @@ namespace Practica2
                     lblEstCivil.Text = "Soltera";
                 }
             }
-
+            foreach(string x in chlEmpleos.CheckedItems)
+            {
+              lbEmpleos.Items.Add(x);   
+            }
            
         }
     }

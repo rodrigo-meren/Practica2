@@ -42,7 +42,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.lblEstCivil = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lbEmpleos = new System.Windows.Forms.ListBox();
             this.gbSexo.SuspendLayout();
             this.gbEstCivil.SuspendLayout();
             this.SuspendLayout();
@@ -155,7 +155,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(61, 523);
+            this.label2.Location = new System.Drawing.Point(115, 523);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 25);
             this.label2.TabIndex = 7;
@@ -165,7 +165,7 @@
             // 
             this.lblSexo.AutoSize = true;
             this.lblSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSexo.Location = new System.Drawing.Point(136, 523);
+            this.lblSexo.Location = new System.Drawing.Point(195, 523);
             this.lblSexo.Name = "lblSexo";
             this.lblSexo.Size = new System.Drawing.Size(0, 25);
             this.lblSexo.TabIndex = 8;
@@ -174,7 +174,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(61, 563);
+            this.label3.Location = new System.Drawing.Point(50, 563);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(134, 25);
             this.label3.TabIndex = 9;
@@ -184,7 +184,7 @@
             // 
             this.lblEstCivil.AutoSize = true;
             this.lblEstCivil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstCivil.Location = new System.Drawing.Point(201, 563);
+            this.lblEstCivil.Location = new System.Drawing.Point(196, 563);
             this.lblEstCivil.Name = "lblEstCivil";
             this.lblEstCivil.Size = new System.Drawing.Size(0, 25);
             this.lblEstCivil.TabIndex = 10;
@@ -199,22 +199,24 @@
             this.label4.TabIndex = 11;
             this.label4.Text = "Ocupación:";
             // 
-            // listBox1
+            // lbEmpleos
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(66, 634);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(269, 148);
-            this.listBox1.TabIndex = 12;
-            this.listBox1.Visible = false;
+            this.lbEmpleos.BackColor = System.Drawing.SystemColors.Control;
+            this.lbEmpleos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lbEmpleos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbEmpleos.FormattingEnabled = true;
+            this.lbEmpleos.ItemHeight = 25;
+            this.lbEmpleos.Location = new System.Drawing.Point(200, 605);
+            this.lbEmpleos.Name = "lbEmpleos";
+            this.lbEmpleos.Size = new System.Drawing.Size(269, 125);
+            this.lbEmpleos.TabIndex = 12;
             // 
             // Ejercicio_3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(705, 797);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lbEmpleos);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lblEstCivil);
             this.Controls.Add(this.label3);
@@ -229,7 +231,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ejercicio_3";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Ejercicio_3_FormClosed);
-            this.Load += new System.EventHandler(this.Ejercicio_3_Load);
             this.gbSexo.ResumeLayout(false);
             this.gbSexo.PerformLayout();
             this.gbEstCivil.ResumeLayout(false);
@@ -254,6 +255,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblEstCivil;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lbEmpleos;
     }
 }
